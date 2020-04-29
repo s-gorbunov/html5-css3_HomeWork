@@ -418,3 +418,10 @@ body {
     word-break: break-all;
 }
 
+.priceList-package-button:hover {
+    box-shadow: 6px 4px 6px 2px rgba(50, 50, 50, 0.81);
+}
+
+.priceList-package-button:active {
+    box-shadow: none;
+}
