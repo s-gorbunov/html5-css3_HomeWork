@@ -239,8 +239,6 @@ body {
     background-color: #f5f5f5;
 }
 
-/*Позиционировал на флоатах потому что сверстал данный блок до 3го вебинара и все вроде корректно работает дальше попробую на флексах*/
-
 .reviews-title {
     display: block;
     text-align: center;
@@ -427,3 +425,18 @@ body {
 .priceList-package-button:active {
     box-shadow: none;
 }
+
+.main-footer {
+    background-color: #445162;
+}
+
+.main-footer-title {
+    display: block;
+    text-align: center;
+    margin: 0 0 31px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
