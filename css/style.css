@@ -426,12 +426,17 @@ body {
     box-shadow: none;
 }
 
-.main-footer {
-    background-color: #445162;
+.main-footer-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1280px;
+    background-color: #445161;
 }
 
 .main-footer-title {
     display: block;
+    width: 100%;
     text-align: center;
     margin: 0 0 31px 0;
     font-size: 30px;
@@ -440,3 +445,163 @@ body {
     color: #ffffff;
 }
 
+.main-footer-form-wrp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 0 46px 0 0;
+}
+
+
+.main-footer-formRows {
+    width: 100%;
+    margin: 0 0 21px 0;
+    padding: 14px 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.main-footer-formRows::-webkit-input-placeholder {
+    font-family: Arial;
+    text-overflow:ellipsis;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.main-footer-formRows:hover {
+    background-color: #ccc;
+    border-color: blue;
+}
+
+.main-footer-formRows:hover::placeholder {
+    color: blue;
+}
+
+.main-footer-form-wrp textarea {
+    width: 500px;
+    height: 170px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+.main-footer-formSubmit {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 140px;
+    padding: 9px;
+    text-transform: uppercase;
+    color:  #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    outline: none;
+}
+
+.main-footer-formSubmit:hover {
+    background-color: #ccc;
+    color: blue;
+}
+
+.main-footer-formSubmit:active {
+    background-color: #ffffff;
+    color: #445162;
+}
+
+.main-footer-contacts {
+    display: block;
+    position: relative;
+    margin: 0 0 23px 0;
+    padding: 0 0 0 30px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.main-footer-contacts:nth-child(1)::before {
+    content: "";
+    display: block;
+    width: 27px;
+    height: 29px;
+    position: absolute;
+    left: 0;
+    background-image: url(../img/skype_icon.png);
+    background-size: cover;
+}
+
+.main-footer-contacts:nth-child(2)::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    left: 0;
+    background-image: url(../img/icq_icon.png);
+    background-size: cover;
+}
+
+.main-footer-contacts:nth-child(3)::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    background-image: url(../img/email_icon.png);
+    background-size: cover;
+}
+
+.main-footer-contacts:nth-child(4)::before {
+    content: "";
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    background-image: url(../img/phone_icon.png);
+    background-size: cover;
+}
+
+.main-footer-icons-wrp {
+    display: flex;
+    justify-content: space-between;
+    width: 240px;
+}
+
+.main-footer-icon {
+    color: #ffffff;
+}
+
+/*Не нашел круглых иконок в font-awesome. Была идея закруглить их через упаковку в див и бордер-радиус, но не помогло*/
+
+.main-footer-icon:hover {
+    color: blue;
+}
+
+.main-footer-icon:active {
+    color: #ccc;
+}
+
+.main-footer-bottomRow {
+    width: 1280px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.main-footer-bottomRow p {
+    margin: 0;
+    font-size: 13px;
+    color: #445162;
+    font-weight: 400;
+    line-height: 23px;
+}
