@@ -580,9 +580,17 @@ body {
 
 .main-footer-icon {
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    color: #445161;
+    font-size: 20px;
 }
-
-/*Не нашел круглых иконок в font-awesome. Была идея закруглить их через упаковку в див и бордер-радиус, но не помогло*/
 
 .main-footer-icon:hover {
     color: blue;
